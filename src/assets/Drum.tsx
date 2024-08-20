@@ -10,7 +10,7 @@ const Drum = ({audioClip}: DrumProps) =>{
         document.getElementById("display")!.innerText = clip.description;
     }
     return(
-        <button className="drump-pad" id={`drum-${audioClip.keyTrigger}`} onClick={() => playSound(audioClip)}>
+        <button className="drum-pad" id={`drum-${audioClip.keyTrigger}`} onClick={() => playSound(audioClip)}>
 
             <audio src={audioClip.url} id = {audioClip.keyTrigger} className="clip" />
             {audioClip.keyTrigger}
